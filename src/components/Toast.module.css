@@ -1,0 +1,28 @@
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-gold);
+  color: var(--color-bg);
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  padding: 12px 20px;
+  border-bottom: 3px solid var(--color-gold-dark);
+  white-space: nowrap;
+  z-index: 100;
+  animation: toastIn 0.2s ease;
+  pointer-events: none;
+}
+
+.success {
+  background: var(--color-green);
+  border-bottom-color: var(--color-green-dark);
+  color: var(--color-white);
+}
+
+.error {
+  background: var(--color-red);
+  border-bottom-color: var(--color-red-dark);
+  color: var(--color-white);
+}

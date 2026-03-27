@@ -1,0 +1,131 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  font-size: 7px;
+  color: var(--color-muted);
+  letter-spacing: 1px;
+}
+
+.badge {
+  background: var(--color-gold);
+  color: var(--color-bg);
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  padding: 4px 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 0;
+  font-size: 8px;
+  color: #444;
+}
+
+.emptyHint {
+  font-size: 6px;
+  color: #333;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border-dim);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #555;
+}
+
+.cardFirst {
+  border-color: var(--color-white);
+  background: var(--color-surface-2);
+}
+
+.posicao {
+  font-size: 8px;
+  color: var(--color-gold);
+  min-width: 28px;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.nome {
+  font-size: 8px;
+  color: var(--color-white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.servico {
+  font-size: 6px;
+  color: var(--color-muted);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.arrow {
+  font-size: 9px;
+  color: var(--color-gold);
+}
+
+.horario {
+  font-size: 6px;
+  color: var(--color-muted);
+}
+
+.removeBtn {
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  background: transparent;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.15s;
+  line-height: 1;
+}
+
+.removeBtn:hover {
+  color: var(--color-red);
+}
